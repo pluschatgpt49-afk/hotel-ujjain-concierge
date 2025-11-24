@@ -154,6 +154,11 @@ def add_custom_css():
         footer {visibility: hidden;}
         /* header {visibility: hidden;}  <-- Removed to ensure Sidebar toggle is visible */
         
+        /* Hide the keyboard arrow icon in header */
+        header[data-testid="stHeader"] span[data-testid="stHeaderActionElements"] {
+            display: none !important;
+        }
+        
         /* Header Styling & Text Injection */
         header[data-testid="stHeader"] {
             background-color: #FFFBF0 !important;
